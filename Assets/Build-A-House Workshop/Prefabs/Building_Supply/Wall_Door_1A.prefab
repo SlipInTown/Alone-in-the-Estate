@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3397152}
   - component: {fileID: 2321270}
   - component: {fileID: 6478912}
+  - component: {fileID: 6250142202110110327}
+  - component: {fileID: -6668603621997521771}
   m_Layer: 0
   m_Name: Wall_Door_1A
   m_TagString: Untagged
@@ -94,3 +96,28 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300084, guid: 48bc8660d1e6e7a42bb8c86473fcd74a, type: 3}
+--- !u!65 &6250142202110110327
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137274}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.59251857, y: 4, z: 4}
+  m_Center: {x: 0.13528693, y: -0.07879186, z: 0}
+--- !u!114 &-6668603621997521771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fa057baee64b6b4aabfc58afce70f05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

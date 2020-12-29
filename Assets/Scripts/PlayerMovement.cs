@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start ()
     {
+        Debug.Log("I am alive!");
         m_Animator = GetComponent<Animator> ();
         m_Rigidbody = GetComponent<Rigidbody> ();
         m_AudioSource = GetComponent<AudioSource> ();
