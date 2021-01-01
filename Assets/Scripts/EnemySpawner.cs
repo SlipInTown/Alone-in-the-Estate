@@ -9,6 +9,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private Transform parent;
     [SerializeField] private Vector3 initialPosition;
     [SerializeField] private Vector3 fieldSize;
+    [SerializeField] private Vector3 initialForce;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,11 @@ public class EnemySpawner : MonoBehaviour
     }
     void Spawn()
     {
-        var newBallPosition = parent.position + initialPosition;
+        var newBallPosition = parent.position;
         Instantiate(ballPrefab, newBallPosition, Quaternion.identity, parent);
+        var newBallBody = GetComponent<Rigidbody>();
+        if (newBallBody == null) return;
+        newBallBody.AddForce(initialForce);
+        //Invoke(nameof(Spawn), delayInSec);
     }
 }
