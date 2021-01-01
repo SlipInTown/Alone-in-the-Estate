@@ -2,32 +2,39 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(CharacterController))]
 public class MovementSimple : MonoBehaviour
 {
-    [SerializeField] private float speed; // Скорость движения, а в дальнейшем ускорение
-    private Rigidbody body;
-    [SerializeField] private float rotationSpeed;
-    private float vertical;
-    private float horizontal;
+    [SerializeField] private float speed;
+    [SerializeField] private float jumpSpeed;
+    [SerializeField] private float gravity;
+    [SerializeField] private Vector3 moveDirection = Vector3.zero;
+    [SerializeField] private CharacterController characterController;
     // Start is called before the first frame update
     private void Start()
     {
-        body = GetComponent<Rigidbody>();
+        characterController = GetComponent<CharacterController>();
     }
-
 
     void OnMouseDown()
     {
-        print("You clicked the John Lemon!");
+        print("You clicked on youself!");
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        vertical = Input.GetAxis("Vertical");
-        horizontal = Input.GetAxis("Horizontal");
-        body.velocity = (transform.forward * vertical) * speed * Time.fixedDeltaTime;
-        transform.Rotate((transform.up * horizontal) * rotationSpeed * Time.fixedDeltaTime);
-        //body.MovePosition()
+        if (characterController.isGrounded)
+        {
+            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+            moveDirection = transform.TransformDirection(moveDirection);
+            moveDirection *= speed;
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && characterController.isGrounded)
+        {
+            moveDirection.y = jumpSpeed;
+        }
+        moveDirection.y -= gravity * Time.deltaTime;
+        characterController.Move(moveDirection * Time.deltaTime);
     }
 }
