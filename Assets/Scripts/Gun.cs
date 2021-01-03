@@ -8,7 +8,7 @@ public class Gun : MonoBehaviour
     [SerializeField] private float initialForce;
 
      
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetMouseButtonDown(0))
         {
