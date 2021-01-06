@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(BoxCollider))]
 public class DestroyDoors : MonoBehaviour
 {
-    private MeshCollider meshCollider;
     private MeshRenderer meshRenderer;
     // Start is called before the first frame update
     void Start()
     {
-        meshCollider = GetComponent<MeshCollider>();
         meshRenderer = GetComponent<MeshRenderer>();
     }
 
@@ -18,7 +17,6 @@ public class DestroyDoors : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             meshRenderer.enabled = false;
-            meshCollider.enabled = false;
         }
     }
     private void OnTriggerExit(Collider other)
@@ -26,7 +24,6 @@ public class DestroyDoors : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             meshRenderer.enabled = true;
-            meshCollider.enabled = true;
         }
     }
 }
