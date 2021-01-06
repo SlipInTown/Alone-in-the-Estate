@@ -9,10 +9,11 @@ public class Gun : MonoBehaviour
     private void Start()
     {
         objectPooler = ObjectPooler.Instance;
+        PlayerInput.MouseZeroInput += ShotABullet;
     }
-    public void FixedUpdate()
+    public void ShotABullet(bool shoot)
     {
-        if (Input.GetMouseButtonDown(0)) 
+        if (shoot) 
         { 
             objectPooler.SpawnFromPool("Bullet", transform.position, Quaternion.identity);
         }

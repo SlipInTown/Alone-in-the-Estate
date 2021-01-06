@@ -14,6 +14,7 @@ public class PlayerInput : MonoBehaviour
     //public UnityEvent<Vector3> OnInputEvent;
 
     public static Action<Vector3> OnInput;
+    public static Action<bool> MouseZeroInput;
     void FixedUpdate()
     {
         var horizontal = Input.GetAxis(horizontalAxis);
@@ -22,6 +23,11 @@ public class PlayerInput : MonoBehaviour
         inputAxis.Set(horizontal, 0, vertical);
 
         OnInput?.Invoke(inputAxis);
+    }
+
+    private void LateUpdate()
+    {
+        MouseZeroInput?.Invoke(Input.GetMouseButtonDown(0));
     }
 }
 

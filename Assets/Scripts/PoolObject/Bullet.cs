@@ -12,7 +12,7 @@ public class Bullet : MonoBehaviour,IPooledObject
     {
         objectPooler = ObjectPooler.Instance;
         GetComponent<Rigidbody>().AddForce(0, 0, force);
-        Invoke(nameof(ReturnToPool), 3);
+        Invoke(nameof(ReturnToPool), 1);
     }
 
     public void ReturnToPool()
