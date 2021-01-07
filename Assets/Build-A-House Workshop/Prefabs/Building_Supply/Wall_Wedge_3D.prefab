@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 438460}
   - component: {fileID: 3343082}
   - component: {fileID: 2318562}
-  - component: {fileID: 6574161698861783820}
+  - component: {fileID: 4789738347025358410}
   m_Layer: 0
   m_Name: Wall_Wedge_3D
   m_TagString: Untagged
@@ -80,8 +80,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &6574161698861783820
-BoxCollider:
+--- !u!64 &4789738347025358410
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -90,6 +90,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.4157359, y: 2, z: 7.9999995}
-  m_Center: {x: 0.028095394, y: 0.037860274, z: -0.31060624}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300052, guid: 48bc8660d1e6e7a42bb8c86473fcd74a, type: 3}

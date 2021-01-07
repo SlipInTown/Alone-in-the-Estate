@@ -22,7 +22,6 @@ public class PlayerMovement : MonoBehaviour
         moveDirection.Set(input.x, 0, input.z);
 
         body.AddForce(moveDirection * moveSpeedMultiplier);
-
     }
 
     void FixedUpdate()

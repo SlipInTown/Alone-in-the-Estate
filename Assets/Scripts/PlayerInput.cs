@@ -8,6 +8,7 @@ public class PlayerInput : MonoBehaviour
 {
     [SerializeField] private string horizontalAxis = "Horizontal";
     [SerializeField] private string verticalAxis = "Vertical";
+    [SerializeField] private string jumpAxis = "Jump";
 
     private Vector3 inputAxis;
 
@@ -19,8 +20,9 @@ public class PlayerInput : MonoBehaviour
     {
         var horizontal = Input.GetAxis(horizontalAxis);
         var vertical = Input.GetAxis(verticalAxis);
+        var jump = Input.GetAxis(jumpAxis);
 
-        inputAxis.Set(horizontal, 0, vertical);
+        inputAxis.Set(horizontal, jump, vertical);
 
         OnInput?.Invoke(inputAxis);
     }
@@ -28,6 +30,8 @@ public class PlayerInput : MonoBehaviour
     private void LateUpdate()
     {
         MouseZeroInput?.Invoke(Input.GetMouseButtonDown(0));
+        //mouseInput = Input.GetMouseButtonDown(0);
+        //mouseInput = Int32.TryParse(Input.GetMouseButtonDown(0).ToString(), out int result);
     }
 }
 

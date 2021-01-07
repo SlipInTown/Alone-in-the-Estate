@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Camera
   - Ball
-  - Bullet
+  - PistolBullet
   layers:
   - Default
   - TransparentFX

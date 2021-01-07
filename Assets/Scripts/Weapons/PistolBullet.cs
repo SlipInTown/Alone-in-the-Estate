@@ -3,15 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class Bullet : MonoBehaviour,IPooledObject
+public class PistolBullet : MonoBehaviour,IPooledObject
 {
     ObjectPooler objectPooler;
     [SerializeField] private float force = 1000f;
+    private Vector3 relative;
+    private void Start()
+    {
+        objectPooler = ObjectPooler.Instance;
+    }
 
     public void OnObjectSpawn()
     {
-        objectPooler = ObjectPooler.Instance;
-        GetComponent<Rigidbody>().AddForce(0, 0, force);
+        //relative.Set(0f, 0f, transform.localPosition.z);
+        //transform.LookAt(moveDirection + transform.position);
+        GetComponent<Rigidbody>().AddForce(transform.forward);
         Invoke(nameof(ReturnToPool), 1);
     }
 
