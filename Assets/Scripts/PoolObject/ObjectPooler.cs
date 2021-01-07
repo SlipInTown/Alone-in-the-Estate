@@ -57,9 +57,7 @@ public class ObjectPooler : MonoBehaviour
         {
             pooledObject.OnObjectSpawn();
         }
-
-        //poolDictionary[tag].Enqueue(objectToSpawn);
-
+        poolDictionary[tag].Enqueue(objectToSpawn);
         return objectToSpawn;
     }
     
@@ -70,10 +68,7 @@ public class ObjectPooler : MonoBehaviour
             Debug.LogWarning($"Pool with tag {tag} is not founded!");
             return;
         }
-
         objectToPool.SetActive(false);
-
-        poolDictionary[tag].Enqueue(objectToPool);
-
+        
     }
 }

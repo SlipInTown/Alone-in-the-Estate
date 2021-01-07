@@ -30,8 +30,6 @@ public class PlayerInput : MonoBehaviour
     private void LateUpdate()
     {
         MouseZeroInput?.Invoke(Input.GetMouseButtonDown(0));
-        //mouseInput = Input.GetMouseButtonDown(0);
-        //mouseInput = Int32.TryParse(Input.GetMouseButtonDown(0).ToString(), out int result);
     }
 }
 

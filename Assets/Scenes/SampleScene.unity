@@ -127,6 +127,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 536776873}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1508768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1352551052}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1508772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2397366
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,9 +156,9 @@ GameObject:
   - component: {fileID: 2397367}
   - component: {fileID: 2397369}
   - component: {fileID: 2397368}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam15
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -807,7 +825,7 @@ PrefabInstance:
     - target: {fileID: 1515094606709328700, guid: 758f0445ae5e86243a05394324e450a2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 123.545
+      value: 122.456
       objectReference: {fileID: 0}
     - target: {fileID: 1515094606709328700, guid: 758f0445ae5e86243a05394324e450a2,
         type: 3}
@@ -861,6 +879,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5783617302507770729, guid: 758f0445ae5e86243a05394324e450a2,
         type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5783617302507770729, guid: 758f0445ae5e86243a05394324e450a2,
+        type: 3}
       propertyPath: m_Constraints
       value: 112
       objectReference: {fileID: 0}
@@ -871,6 +894,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 758f0445ae5e86243a05394324e450a2, type: 3}
+--- !u!4 &39969206 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8908527787126378456, guid: 38827eaff8675724fad11f1b6f7145c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 2003121447}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &41357631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -958,9 +987,9 @@ GameObject:
   - component: {fileID: 46382973}
   - component: {fileID: 46382975}
   - component: {fileID: 46382974}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam32
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1247,6 +1276,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -1776,9 +1813,9 @@ GameObject:
   - component: {fileID: 104365253}
   - component: {fileID: 104365255}
   - component: {fileID: 104365254}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam20
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1833,6 +1870,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -1896,6 +1941,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (84)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -2396,9 +2449,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 145694639}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Doors
-  m_TagString: Untagged
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2649,9 +2702,9 @@ GameObject:
   - component: {fileID: 157159710}
   - component: {fileID: 157159712}
   - component: {fileID: 157159711}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam18
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2780,6 +2833,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -3042,6 +3103,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 44
@@ -3105,6 +3174,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -3166,9 +3243,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 198094856}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Triggers
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3252,9 +3329,9 @@ GameObject:
   - component: {fileID: 212010622}
   - component: {fileID: 212010624}
   - component: {fileID: 212010623}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam46
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3310,9 +3387,9 @@ GameObject:
   - component: {fileID: 218990735}
   - component: {fileID: 218990737}
   - component: {fileID: 218990736}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam26
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3813,6 +3890,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (80)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -4609,9 +4694,9 @@ GameObject:
   - component: {fileID: 325936631}
   - component: {fileID: 325936633}
   - component: {fileID: 325936632}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam21
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4749,9 +4834,9 @@ GameObject:
   - component: {fileID: 333964909}
   - component: {fileID: 333964910}
   - component: {fileID: 333964911}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam2
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4807,9 +4892,9 @@ GameObject:
   - component: {fileID: 341302108}
   - component: {fileID: 341302110}
   - component: {fileID: 341302109}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam28
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5014,6 +5099,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (91)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -5317,6 +5410,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -6515,6 +6616,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -6787,6 +6896,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -7237,9 +7354,9 @@ GameObject:
   - component: {fileID: 476634741}
   - component: {fileID: 476634743}
   - component: {fileID: 476634742}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam44
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7295,9 +7412,9 @@ GameObject:
   - component: {fileID: 476698560}
   - component: {fileID: 476698562}
   - component: {fileID: 476698561}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam40
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7816,9 +7933,9 @@ GameObject:
   - component: {fileID: 491324681}
   - component: {fileID: 491324683}
   - component: {fileID: 491324682}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam42
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7958,6 +8075,14 @@ PrefabInstance:
     - target: {fileID: 137274, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1A (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 137274, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 137274, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 421662, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
       propertyPath: m_RootOrder
@@ -8153,6 +8278,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5396a5cbdb8f9254db2b7502e27d19c3, type: 3}
+--- !u!1 &518626064 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 812354123}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &518626068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518626064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &521068540
 GameObject:
   m_ObjectHideFlags: 0
@@ -8238,9 +8381,9 @@ GameObject:
   - component: {fileID: 523428392}
   - component: {fileID: 523428394}
   - component: {fileID: 523428393}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam45
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -8295,6 +8438,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -8352,6 +8503,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -8630,6 +8789,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 49
@@ -8763,6 +8930,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (88)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -8969,6 +9144,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -9015,6 +9198,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+--- !u!1 &558464243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1318861202}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &558464247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558464243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &558738115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9101,6 +9302,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (82)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -9253,9 +9462,9 @@ GameObject:
   - component: {fileID: 599449885}
   - component: {fileID: 599449887}
   - component: {fileID: 599449886}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam23
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9376,6 +9585,42 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 603038942}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &603879190 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 759086642}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &603879194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603879190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &607708770 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 131790340}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &607708774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607708770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &612689298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9386,6 +9631,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -9668,6 +9921,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 54
@@ -9731,9 +9992,9 @@ GameObject:
   - component: {fileID: 626326942}
   - component: {fileID: 626326944}
   - component: {fileID: 626326943}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam27
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9789,9 +10050,9 @@ GameObject:
   - component: {fileID: 628572605}
   - component: {fileID: 628572607}
   - component: {fileID: 628572606}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam4
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9836,6 +10097,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.131055, y: 4.849329, z: 4.9882355}
   m_Center: {x: 4.8261285, y: -1.67204, z: 2.9600372}
+--- !u!1 &633144630 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 498101308}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &633144634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633144630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &636588329
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9846,6 +10125,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -9922,9 +10209,9 @@ GameObject:
   - component: {fileID: 646798372}
   - component: {fileID: 646798374}
   - component: {fileID: 646798373}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam12
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9980,6 +10267,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -10032,6 +10327,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 652797038}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &655241207 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 164872, guid: dea3549621b21ab479cb6de35b35ce4f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1438717941}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &655241211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655241207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &656021472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10263,6 +10576,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 48
@@ -10393,9 +10714,9 @@ GameObject:
   - component: {fileID: 673104833}
   - component: {fileID: 673104835}
   - component: {fileID: 673104834}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam22
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10692,6 +11013,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1A
       objectReference: {fileID: 0}
+    - target: {fileID: 137274, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 137274, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 421662, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -10752,6 +11081,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 694552417}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &694651563 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 2146423806}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &694651567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694651563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &695989822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10983,9 +11330,9 @@ GameObject:
   - component: {fileID: 703888749}
   - component: {fileID: 703888751}
   - component: {fileID: 703888750}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam9
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11737,9 +12084,9 @@ GameObject:
   - component: {fileID: 716595659}
   - component: {fileID: 716595661}
   - component: {fileID: 716595660}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam13
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -12168,6 +12515,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1A (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 137274, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 137274, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 421662, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -12224,6 +12579,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (69)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -12502,6 +12865,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 747163248}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &756920041 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 164872, guid: dea3549621b21ab479cb6de35b35ce4f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1360978777}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &756920045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756920041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &759086642
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13212,9 +13593,9 @@ GameObject:
   - component: {fileID: 799161100}
   - component: {fileID: 799161102}
   - component: {fileID: 799161101}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam38
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13645,9 +14026,9 @@ GameObject:
   - component: {fileID: 814643992}
   - component: {fileID: 814643994}
   - component: {fileID: 814643993}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam29
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13855,6 +14236,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (85)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 61
@@ -13917,6 +14306,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -14198,6 +14595,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -14406,6 +14811,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -14619,6 +15032,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -14756,6 +15177,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (90)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 68
@@ -14892,6 +15321,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1A (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 137274, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 137274, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 421662, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -15025,6 +15462,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -15142,6 +15587,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 908192806}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &911750690 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1182722459}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &911750694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911750690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &917515508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15305,6 +15768,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -15430,6 +15901,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 931135753}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &935079949 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 931135753}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &935079953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935079949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &935755963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15440,6 +15929,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -15634,9 +16131,9 @@ GameObject:
   - component: {fileID: 945452690}
   - component: {fileID: 945452692}
   - component: {fileID: 945452691}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam5
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15692,9 +16189,9 @@ GameObject:
   - component: {fileID: 946066688}
   - component: {fileID: 946066690}
   - component: {fileID: 946066689}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam31
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15830,6 +16327,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (89)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -16177,6 +16682,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86cc3deb390390d4e9e45f9fdaedbd37, type: 3}
+--- !u!1 &983727285 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 363234242}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &983727289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983727285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &987379299 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad,
@@ -16189,6 +16712,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 186620364}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &999169742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1109796525}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &999169746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999169742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1002279048 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad,
@@ -16271,6 +16812,42 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1002509331}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1003143281 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 8007365}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1003143285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003143281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1005007774 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1013152608}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1005007778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005007774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1006049083
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16734,9 +17311,9 @@ GameObject:
   - component: {fileID: 1024438453}
   - component: {fileID: 1024438455}
   - component: {fileID: 1024438454}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam37
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16792,9 +17369,9 @@ GameObject:
   - component: {fileID: 1024691493}
   - component: {fileID: 1024691495}
   - component: {fileID: 1024691494}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam6
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -17061,6 +17638,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1032793371}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1037900158 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 862705713}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1037900162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037900158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1043632467 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 414708, guid: 5396a5cbdb8f9254db2b7502e27d19c3,
@@ -17304,6 +17899,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -17506,6 +18109,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 779370065}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1085653262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1614085456}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1085653266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085653262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1098100089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17516,6 +18137,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -17579,6 +18208,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -17869,6 +18506,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1109796525}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1111946725 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1368946084}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1111946729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111946725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1112842430 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 414708, guid: 5396a5cbdb8f9254db2b7502e27d19c3,
@@ -17969,9 +18624,9 @@ GameObject:
   - component: {fileID: 1128709455}
   - component: {fileID: 1128709457}
   - component: {fileID: 1128709456}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam13.1
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -18541,6 +19196,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (83)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 59
@@ -19044,9 +19707,9 @@ GameObject:
   - component: {fileID: 1213621765}
   - component: {fileID: 1213621767}
   - component: {fileID: 1213621766}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam41
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19102,9 +19765,9 @@ GameObject:
   - component: {fileID: 1224108393}
   - component: {fileID: 1224108395}
   - component: {fileID: 1224108394}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam8
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19227,6 +19890,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (78)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 55
@@ -19295,6 +19966,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -19438,6 +20117,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 53
@@ -19577,9 +20264,9 @@ GameObject:
   - component: {fileID: 1263602410}
   - component: {fileID: 1263602412}
   - component: {fileID: 1263602411}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam11
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19852,9 +20539,9 @@ GameObject:
   - component: {fileID: 1282854696}
   - component: {fileID: 1282854698}
   - component: {fileID: 1282854697}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam19
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19982,9 +20669,9 @@ GameObject:
   - component: {fileID: 1293459950}
   - component: {fileID: 1293459952}
   - component: {fileID: 1293459951}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam16
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20039,6 +20726,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -20170,9 +20865,9 @@ GameObject:
   - component: {fileID: 1312182189}
   - component: {fileID: 1312182191}
   - component: {fileID: 1312182190}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam43
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20597,6 +21292,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 8, y: 0.40000203, z: 4.000003}
   m_Center: {x: 0.0000076293945, y: -0.15384558, z: -0.00000023841864}
+--- !u!114 &1338607673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338607668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1342022278
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21029,6 +21736,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1360978777}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1364563687 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1719177650}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1364563691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364563687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1365851478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21276,7 +22001,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384034656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.678, z: 0}
+  m_LocalPosition: {x: 0, y: 1.135, z: 0.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1640848383}
@@ -21308,6 +22033,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -21365,6 +22098,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -21797,6 +22538,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1A (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 137274, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 137274, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 421662, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -22085,9 +22834,9 @@ GameObject:
   - component: {fileID: 1420446691}
   - component: {fileID: 1420446693}
   - component: {fileID: 1420446692}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam14
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -22510,6 +23259,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1438717941}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1442476031 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 164872, guid: dea3549621b21ab479cb6de35b35ce4f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1128530362}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1442476035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442476031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1456245652
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22749,9 +23516,9 @@ GameObject:
   - component: {fileID: 1489848485}
   - component: {fileID: 1489848487}
   - component: {fileID: 1489848486}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam36
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -23076,6 +23843,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -23133,9 +23908,9 @@ GameObject:
   - component: {fileID: 1515955698}
   - component: {fileID: 1515955700}
   - component: {fileID: 1515955699}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam17
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -23414,9 +24189,9 @@ GameObject:
   - component: {fileID: 1535765798}
   - component: {fileID: 1535765800}
   - component: {fileID: 1535765799}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam39
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -23471,6 +24246,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (65)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -23534,6 +24317,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -23759,6 +24550,14 @@ PrefabInstance:
     - target: {fileID: 137274, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1A (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 137274, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 137274, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 421662, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
       propertyPath: m_RootOrder
@@ -24046,6 +24845,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 41357631}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1585505254 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 782999416}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1585505258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585505254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1587399783
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24056,6 +24873,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (87)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -24189,6 +25014,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -24329,6 +25162,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -24451,6 +25292,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -24797,6 +25646,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1621045389}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1621459954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 719302916}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1621459958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621459954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1624227155
 GameObject:
   m_ObjectHideFlags: 0
@@ -24896,6 +25763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeedMultiplier: 100
+  dragPercentSlowdown: 0.01
 --- !u!136 &1640848381
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -24916,6 +25784,22 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 33676262}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1640848384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640848377}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b69e4e92bbd71284ead8770fa9a1aad3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointer: {fileID: 39969206}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &1642778139
 GameObject:
   m_ObjectHideFlags: 0
@@ -25001,6 +25885,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1A (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 137274, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 137274, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 421662, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
       propertyPath: m_RootOrder
       value: 51
@@ -25064,9 +25956,9 @@ GameObject:
   - component: {fileID: 1648304459}
   - component: {fileID: 1648304461}
   - component: {fileID: 1648304460}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam25
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -25335,9 +26227,9 @@ GameObject:
   - component: {fileID: 1662001401}
   - component: {fileID: 1662001403}
   - component: {fileID: 1662001402}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam3
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -25542,6 +26434,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -25604,6 +26504,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (81)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -25873,6 +26781,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5396a5cbdb8f9254db2b7502e27d19c3, type: 3}
+--- !u!1 &1714077536 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 469078274}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1714077540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714077536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1717767902 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 402608, guid: 86cc3deb390390d4e9e45f9fdaedbd37,
@@ -25889,6 +26815,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -26172,9 +27106,9 @@ GameObject:
   - component: {fileID: 1734051267}
   - component: {fileID: 1734051269}
   - component: {fileID: 1734051268}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam33
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -26229,6 +27163,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -26507,9 +27449,9 @@ GameObject:
   - component: {fileID: 1758500598}
   - component: {fileID: 1758500600}
   - component: {fileID: 1758500599}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam10
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -26832,6 +27774,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86cc3deb390390d4e9e45f9fdaedbd37, type: 3}
+--- !u!1 &1782630876 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 222220303}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1782630880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782630876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1791959446 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 464764, guid: da1e1f142f997eb4cb2c196ed63fae0f,
@@ -26988,6 +27948,24 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &1801624778 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 855612364}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1801624782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801624778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1817062446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27145,9 +28123,9 @@ GameObject:
   - component: {fileID: 1827754028}
   - component: {fileID: 1827754029}
   - component: {fileID: 1827754030}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam1
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -27209,9 +28187,9 @@ GameObject:
   - component: {fileID: 1837792403}
   - component: {fileID: 1837792405}
   - component: {fileID: 1837792404}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam35
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -27490,6 +28468,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 349f44b2dee708c4b8c23f2f17f05296, type: 3}
+--- !u!1 &1855503213 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 164872, guid: dea3549621b21ab479cb6de35b35ce4f,
+    type: 3}
+  m_PrefabInstance: {fileID: 82199581}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1855503217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855503213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1861299196
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27804,6 +28800,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 46
@@ -27940,6 +28944,14 @@ PrefabInstance:
     - target: {fileID: 137274, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1A (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 137274, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 137274, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 421662, guid: b391e6050bf4e8c45ba113e9cf30566b, type: 3}
       propertyPath: m_RootOrder
@@ -28154,6 +29166,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -28200,6 +29220,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+--- !u!1 &1898732481 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 415779254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1898732485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898732481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1898903234
 GameObject:
   m_ObjectHideFlags: 0
@@ -28580,6 +29618,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (86)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 62
@@ -28642,6 +29688,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -28995,9 +30049,9 @@ GameObject:
   - component: {fileID: 1937375896}
   - component: {fileID: 1937375898}
   - component: {fileID: 1937375897}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: 'TrigCam7 '
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -29053,9 +30107,9 @@ GameObject:
   - component: {fileID: 1937591808}
   - component: {fileID: 1937591810}
   - component: {fileID: 1937591809}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam34
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -29259,9 +30313,9 @@ GameObject:
   - component: {fileID: 1952169965}
   - component: {fileID: 1952169967}
   - component: {fileID: 1952169966}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam24
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -29454,6 +30508,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1956556217}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1961198023 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 425427656}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1961198027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961198023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1961603674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29569,6 +30641,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1965765748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1673708533}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1965765752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965765748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1970433244
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30006,6 +31096,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2000960667}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2003121447
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8908527787126378456, guid: 38827eaff8675724fad11f1b6f7145c1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8908527787126378456, guid: 38827eaff8675724fad11f1b6f7145c1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 119.398636
+      objectReference: {fileID: 0}
+    - target: {fileID: 8908527787126378456, guid: 38827eaff8675724fad11f1b6f7145c1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.75709915
+      objectReference: {fileID: 0}
+    - target: {fileID: 8908527787126378456, guid: 38827eaff8675724fad11f1b6f7145c1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 114.21924
+      objectReference: {fileID: 0}
+    - target: {fileID: 8908527787126378456, guid: 38827eaff8675724fad11f1b6f7145c1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8908527787126378456, guid: 38827eaff8675724fad11f1b6f7145c1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8908527787126378456, guid: 38827eaff8675724fad11f1b6f7145c1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8908527787126378456, guid: 38827eaff8675724fad11f1b6f7145c1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8908527787126378456, guid: 38827eaff8675724fad11f1b6f7145c1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8908527787126378456, guid: 38827eaff8675724fad11f1b6f7145c1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8908527787126378456, guid: 38827eaff8675724fad11f1b6f7145c1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932633286677836729, guid: 38827eaff8675724fad11f1b6f7145c1,
+        type: 3}
+      propertyPath: m_Name
+      value: Pointer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 38827eaff8675724fad11f1b6f7145c1, type: 3}
 --- !u!1001 &2023542560
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30378,6 +31537,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -30440,6 +31607,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (76)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -30577,6 +31752,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (79)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -30783,6 +31966,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_1B (92)
       objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
+      objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
       value: 70
@@ -30846,9 +32037,9 @@ GameObject:
   - component: {fileID: 2081278234}
   - component: {fileID: 2081278236}
   - component: {fileID: 2081278235}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam30
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31047,6 +32238,14 @@ PrefabInstance:
     - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_Name
       value: Wall_Door_1B (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 157512, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
+      propertyPath: m_TagString
+      value: Triggers
       objectReference: {fileID: 0}
     - target: {fileID: 418658, guid: d8484be620c8f7b479833db4cb88fdad, type: 3}
       propertyPath: m_RootOrder
@@ -31331,6 +32530,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2109408093}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2116687883 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199654, guid: 75b7c806a46e90945850f9179ae642ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1234136502}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2116687887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116687883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850515550f0f2354a8f05a3fb69b8dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2124186458 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 414708, guid: 5396a5cbdb8f9254db2b7502e27d19c3,
@@ -31497,9 +32714,9 @@ GameObject:
   - component: {fileID: 2144613783}
   - component: {fileID: 2144613785}
   - component: {fileID: 2144613784}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrigCam47
-  m_TagString: GameController
+  m_TagString: Triggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

@@ -6,8 +6,7 @@ using UnityEngine;
 public class PistolBullet : MonoBehaviour,IPooledObject
 {
     ObjectPooler objectPooler;
-    [SerializeField] private float force = 1000f;
-    private Vector3 relative;
+    [SerializeField] private float force = 50f;
     private void Start()
     {
         objectPooler = ObjectPooler.Instance;
@@ -15,14 +14,13 @@ public class PistolBullet : MonoBehaviour,IPooledObject
 
     public void OnObjectSpawn()
     {
-        //relative.Set(0f, 0f, transform.localPosition.z);
-        //transform.LookAt(moveDirection + transform.position);
-        GetComponent<Rigidbody>().AddForce(transform.forward);
-        Invoke(nameof(ReturnToPool), 1);
+        GetComponent<Rigidbody>().velocity = transform.forward * force;
+        //Invoke(nameof(ReturnToPool), 1);
     }
 
-    public void ReturnToPool()
+    private void OnCollisionEnter(Collision collision)
     {
         objectPooler.BackInPool(gameObject, gameObject.tag);
     }
+
 }
