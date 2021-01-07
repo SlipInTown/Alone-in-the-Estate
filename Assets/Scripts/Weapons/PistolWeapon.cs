@@ -20,6 +20,7 @@ public class PistolWeapon : MonoBehaviour
     }
     public void Shoot(bool isShoot)
     {
-        if (isShoot) objectPooler.SpawnFromPool(ammoTag, transform.position, Quaternion.LookRotation(transform.forward));
+        if (isShoot) objectPooler.SpawnFromPool(ammoTag, RayCast.hitRayCast.point, Quaternion.LookRotation(transform.forward));
+        //if (isShoot) objectPooler.SpawnFromPool(ammoTag, transform.position, Quaternion.LookRotation(transform.forward));
     }
 }

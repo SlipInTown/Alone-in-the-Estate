@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class RayCast : MonoBehaviour
 {
-    Ray ray;
-    RaycastHit hit;
+    [SerializeField] private float maxDistanceOfRayCast = 80f;
+    [SerializeField] public static RaycastHit hitRayCast;
     public Transform pointer;
     [SerializeField] private LayerMask layerMask;
+    //[SerializeField] private float realDistance;
     // Update is called once per frame
-    void LateUpdate()
+    void Update()
     {
-        ray = new Ray(transform.position, transform.forward);
-        Debug.DrawRay(ray.origin,ray.direction*5,Color.red);
-        if (Physics.Raycast(ray, out hit, layerMask)) 
+        //ray = new Ray();
+        //Debug.DrawRay(ray.origin,ray.direction*5,Color.red);
+        if (Physics.Raycast(transform.position, transform.forward, out hitRayCast, maxDistanceOfRayCast, layerMask)) 
         {
-            pointer.position = hit.point;
-            Selectable select = hit.collider.gameObject.GetComponent<Selectable>();
-            if (select) { select.Select(); }
+            pointer.position = hitRayCast.point;
+            //realDistance = hitRayCast.distance;
         }
 
     }

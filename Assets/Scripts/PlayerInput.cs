@@ -20,9 +20,9 @@ public class PlayerInput : MonoBehaviour
     {
         var horizontal = Input.GetAxis(horizontalAxis);
         var vertical = Input.GetAxis(verticalAxis);
-        var jump = Input.GetAxis(jumpAxis);
+        //var jump = Input.GetAxis(jumpAxis);
 
-        inputAxis.Set(horizontal, jump, vertical);
+        inputAxis.Set(horizontal, 0, vertical);
 
         OnInput?.Invoke(inputAxis);
     }

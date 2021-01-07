@@ -15,6 +15,7 @@ public class PistolBullet : MonoBehaviour,IPooledObject
     public void OnObjectSpawn()
     {
         GetComponent<Rigidbody>().velocity = transform.forward * force;
+        //GetComponent<Rigidbody>().AddForce(transform.forward * force);
         //Invoke(nameof(ReturnToPool), 1);
     }
 
