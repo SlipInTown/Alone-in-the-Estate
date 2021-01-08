@@ -20,7 +20,15 @@ public class PistolWeapon : MonoBehaviour
     }
     public void Shoot(bool isShoot)
     {
-        if (isShoot) objectPooler.SpawnFromPool(ammoTag, RayCast.hitRayCast.point, Quaternion.LookRotation(transform.forward));
+        if (isShoot)
+        {
+            if (PlayerInvent.pistolAmmoCount > 0){
+                objectPooler.SpawnFromPool(ammoTag, RayCast.hitRayCast.point, Quaternion.LookRotation(transform.forward));
+                PlayerInvent.pistolAmmoCount--;
+                Debug.Log($"Осталось {PlayerInvent.pistolAmmoCount} патронов");
+            }
+            else Debug.Log($"У вас закончились патроны подберите новые!");
+        }
         //if (isShoot) objectPooler.SpawnFromPool(ammoTag, transform.position, Quaternion.LookRotation(transform.forward));
     }
 }
