@@ -69,6 +69,5 @@ public class ObjectPooler : MonoBehaviour
             return;
         }
         objectToPool.SetActive(false);
-        
     }
 }

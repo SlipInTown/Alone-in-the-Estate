@@ -9,7 +9,7 @@ public class Health : MonoBehaviour
     // Start is called before the first frame update
     private void OnCollisionEnter(Collision collision)
     {
-        hpCount--;
-        if (hpCount == 0) Destroy(owner);
+        if (!(collision.gameObject.CompareTag("PistolBullet") || collision.gameObject.CompareTag("Ball"))) return;
+        Destroy(owner);
     }
 }
