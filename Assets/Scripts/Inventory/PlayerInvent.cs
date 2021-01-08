@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class PlayerInvent : MonoBehaviour
 {
-    public static int pistolAmmoCount = 10;
+    [SerializeField] public static int pistolAmmoCount = 10;
 }
