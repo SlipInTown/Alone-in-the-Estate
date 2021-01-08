@@ -8,7 +8,7 @@ public class PlayerInput : MonoBehaviour
 {
     [SerializeField] private string horizontalAxis = "Horizontal";
     [SerializeField] private string verticalAxis = "Vertical";
-    [SerializeField] private string jumpAxis = "Jump";
+    //[SerializeField] private string jumpAxis = "Jump";
 
     private Vector3 inputAxis;
 
