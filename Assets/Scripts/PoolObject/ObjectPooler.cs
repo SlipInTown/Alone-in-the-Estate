@@ -15,7 +15,7 @@ public class ObjectPooler : MonoBehaviour
     public List<Pool> pools;
     public Dictionary<string, Queue<GameObject>> poolDictionary;
 
-    #region Singleton
+    #region SingletonPooler
     public static ObjectPooler Instance; 
     private void Awake()
     {
