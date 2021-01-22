@@ -14,6 +14,11 @@ public class Health : MonoBehaviour
     
     [SerializeField] private string bulletTag = "PistolBullet";
 
+    /// <summary>
+    /// Добавить новые тэги для новых пуль ||
+    /// </summary>
+    /// <param name="collision"></param>
+
     private void OnCollisionEnter(Collision collision)
     {
         if (!(collision.gameObject.CompareTag(bulletTag) || collision.gameObject.CompareTag(enemyTag))) return;

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public interface IItem
 {
-    string GetItemType();    
+    string GetItemType();
 
+    int Quantity { get; set; }
 }

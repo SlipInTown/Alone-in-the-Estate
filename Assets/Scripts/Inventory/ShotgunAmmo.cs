@@ -16,9 +16,13 @@ public class ShotgunAmmo : MonoBehaviour, AmmoClass
         {
             return ammoTag;
         }
+        set
+        {
+            ammoTag = value;
+        }
     }
 
-    public int AmmoCount
+    public int Quantity
     {
         get
         {
@@ -36,13 +40,19 @@ public class ShotgunAmmo : MonoBehaviour, AmmoClass
         {
             return ammoDamage;
         }
+        set
+        {
+            ammoDamage = value;
+        }
     }
 
-    ShotgunAmmo shotGunAmmo;
+    ShotgunAmmo shotgunAmmo;
+    PlayerInvent inventory;
     void Start()
     {
-        shotGunAmmo = new ShotgunAmmo();
-        FindObjectOfType<PlayerInvent>().itemPlayerList.Add(AmmoType, shotGunAmmo);
+        inventory = GetComponent<PlayerInvent>();
+        shotgunAmmo = new ShotgunAmmo { AmmoType = ammoTag, Quantity = ammoCount, DamageOfAmmo = ammoDamage };
+        inventory.itemPlayerList.Add(AmmoType, shotgunAmmo);
     }
 
     public string GetItemType()

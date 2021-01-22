@@ -972,7 +972,7 @@ PrefabInstance:
     - target: {fileID: 1515094606709328700, guid: 758f0445ae5e86243a05394324e450a2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.296
+      value: 1.228
       objectReference: {fileID: 0}
     - target: {fileID: 1515094606709328700, guid: 758f0445ae5e86243a05394324e450a2,
         type: 3}
@@ -5460,7 +5460,7 @@ PrefabInstance:
     - target: {fileID: 7238040624038386920, guid: abeb186619cc7e6419cb81e1e4dfa162,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7497166902168839598, guid: abeb186619cc7e6419cb81e1e4dfa162,
         type: 3}
@@ -5470,7 +5470,7 @@ PrefabInstance:
     - target: {fileID: 8315226339499486601, guid: abeb186619cc7e6419cb81e1e4dfa162,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8491426936890532968, guid: abeb186619cc7e6419cb81e1e4dfa162,
         type: 3}
@@ -6889,11 +6889,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 386248934}
+  - component: {fileID: 386248939}
   - component: {fileID: 386248936}
   - component: {fileID: 386248933}
   - component: {fileID: 386248935}
   - component: {fileID: 386248937}
   - component: {fileID: 386248938}
+  - component: {fileID: 386248940}
+  - component: {fileID: 386248942}
+  - component: {fileID: 386248941}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -6994,6 +6998,63 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &386248939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386248932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c28864ca42f40b4c967a0a873f7f4ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &386248940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386248932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 464c51dbff7361c4e8bca27c9e10bd6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoTag: PistolBullet
+  ammoCount: 10
+  ammoDamage: 5
+--- !u!114 &386248941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386248932}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b444438eb567e704cb29f28cffafea0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoTag: RifleBullet
+  ammoCount: 0
+  ammoDamage: 2
+--- !u!114 &386248942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386248932}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd454c52578d5cc488ea3803767f0784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoTag: ShotgunBullet
+  ammoCount: 0
+  ammoDamage: 20
 --- !u!1 &391949225
 GameObject:
   m_ObjectHideFlags: 0
@@ -22153,7 +22214,7 @@ PrefabInstance:
     - target: {fileID: 6861679364896198110, guid: cba60766844a7c640b1f817032740eac,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 116.932
+      value: 113.909
       objectReference: {fileID: 0}
     - target: {fileID: 6861679364896198110, guid: cba60766844a7c640b1f817032740eac,
         type: 3}
@@ -38857,6 +38918,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ammo
+      objectReference: {fileID: 0}
+    - target: {fileID: 126094977201806383, guid: c6395d2a2e028874abfd6f14b9a389f4,
+        type: 3}
+      propertyPath: ammoPickUpTag
+      value: PistolBullet
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6395d2a2e028874abfd6f14b9a389f4, type: 3}

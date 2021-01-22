@@ -42,11 +42,11 @@ public class AmmoPickUp : MonoBehaviour
 
     void AddAmmo(AmmoClass ammoClass, int additionCount)
     {
-        ammoClass.AmmoCount += additionCount;
+        ammoClass.Quantity += additionCount;
     }
 
     void LogAmmo(AmmoClass ammoClass, string ammoTag)
     {
-        Debug.Log($"У вас стало {ammoClass.AmmoCount} патронов типа {ammoTag}");
+        Debug.Log($"У вас стало {ammoClass.Quantity} патронов типа {ammoTag}");
     }
 }

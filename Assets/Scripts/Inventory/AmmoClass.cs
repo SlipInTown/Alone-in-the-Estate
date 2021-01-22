@@ -4,10 +4,8 @@ using UnityEngine;
 
 public interface AmmoClass : IItem 
 {
-    string AmmoType{ get; }
+    string AmmoType{ get; set; }
 
-    float DamageOfAmmo{ get; }
-
-    int AmmoCount { get; set; }
+    float DamageOfAmmo{ get; set; }
 
 }
