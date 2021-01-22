@@ -9,11 +9,7 @@ public class PistolWeapon : MonoBehaviour
     [SerializeField] public float reloadSpeed;
     [SerializeField] public string nameWeapon = "Pistol";
     private string ammoTag = "PistolBullet";
-    private PistolBullet bullet;
     private PlayerInvent inventory;
-    private PistolAmmo tempAmmo;
-
-    AmmoClass ammunition;
 
     ObjectPooler objectPooler;
 
