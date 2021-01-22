@@ -19,24 +19,9 @@ public class AmmoPickUp : MonoBehaviour
     {
         if (!other.gameObject.CompareTag(playerTag)) return;
 
-        if (ammoPickUpTag == "PistolBullet")
-        {
-            PistolAmmo tempAmmo = (PistolAmmo)inventory.itemPlayerList[ammoPickUpTag];
-            AddAmmo(tempAmmo, ammoAddition);
-            LogAmmo(tempAmmo, ammoPickUpTag);
-        }
-        if (ammoPickUpTag == "ShotgunBullet")
-        {
-            ShotgunAmmo tempAmmo = (ShotgunAmmo)inventory.itemPlayerList[ammoPickUpTag];
-            AddAmmo(tempAmmo, ammoAddition);
-            LogAmmo(tempAmmo, ammoPickUpTag);
-        }
-        if (ammoPickUpTag == "RifleBullet")
-        {
-            RifleAmmo tempAmmo = (RifleAmmo)inventory.itemPlayerList[ammoPickUpTag];
-            AddAmmo(tempAmmo, ammoAddition);
-            LogAmmo(tempAmmo, ammoPickUpTag);
-        }
+        var tempAmmo = (AmmoClass)inventory.itemPlayerList[ammoPickUpTag];
+        AddAmmo(tempAmmo, ammoAddition);
+        LogAmmo(tempAmmo, ammoPickUpTag);
         Destroy(gameObject);
     }
 
