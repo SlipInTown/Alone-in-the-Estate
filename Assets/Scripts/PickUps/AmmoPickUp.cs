@@ -22,13 +22,31 @@ public class AmmoPickUp : MonoBehaviour
         if (ammoPickUpTag == "PistolBullet")
         {
             PistolAmmo tempAmmo = (PistolAmmo)inventory.itemPlayerList[ammoPickUpTag];
-            tempAmmo.AmmoCount += ammoAddition;
-            Debug.Log($"У вас стало {tempAmmo.AmmoCount} патронов типа {ammoPickUpTag}");
+            AddAmmo(tempAmmo, ammoAddition);
+            LogAmmo(tempAmmo, ammoPickUpTag);
         }
-        
-        //inventory.playerInventory.Find()
-        //PlayerInvent.pistolAmmoCount += ammoAddition;
-        
+        if (ammoPickUpTag == "ShotgunBullet")
+        {
+            ShotgunAmmo tempAmmo = (ShotgunAmmo)inventory.itemPlayerList[ammoPickUpTag];
+            AddAmmo(tempAmmo, ammoAddition);
+            LogAmmo(tempAmmo, ammoPickUpTag);
+        }
+        if (ammoPickUpTag == "RifleBullet")
+        {
+            RifleAmmo tempAmmo = (RifleAmmo)inventory.itemPlayerList[ammoPickUpTag];
+            AddAmmo(tempAmmo, ammoAddition);
+            LogAmmo(tempAmmo, ammoPickUpTag);
+        }
         Destroy(gameObject);
+    }
+
+    void AddAmmo(AmmoClass ammoClass, int additionCount)
+    {
+        ammoClass.AmmoCount += additionCount;
+    }
+
+    void LogAmmo(AmmoClass ammoClass, string ammoTag)
+    {
+        Debug.Log($"У вас стало {ammoClass.AmmoCount} патронов типа {ammoTag}");
     }
 }

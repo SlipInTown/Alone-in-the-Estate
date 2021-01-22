@@ -8,7 +8,7 @@ public class PistolWeapon : MonoBehaviour
     [SerializeField] public int roundMag = 10;
     [SerializeField] public float reloadSpeed;
     [SerializeField] public string nameWeapon = "Pistol";
-    private string ammoTag = "PistolBullet";
+    //private string ammoTag = "PistolBullet";
     private PistolBullet bullet;
 
     AmmoClass ammunition;
