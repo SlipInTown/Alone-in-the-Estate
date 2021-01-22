@@ -10,6 +10,7 @@ TagManager:
   - Ammunition
   - Enemy
   - Ball
+  - ShotgunBullet
   layers:
   - Default
   - TransparentFX

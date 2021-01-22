@@ -20,8 +20,11 @@ public class AmmoPickUp : MonoBehaviour
         if (!other.gameObject.CompareTag(playerTag)) return;
 
         var tempAmmo = (AmmoClass)inventory.itemPlayerList[ammoPickUpTag];
+
         AddAmmo(tempAmmo, ammoAddition);
+
         LogAmmo(tempAmmo, ammoPickUpTag);
+
         Destroy(gameObject);
     }
 
