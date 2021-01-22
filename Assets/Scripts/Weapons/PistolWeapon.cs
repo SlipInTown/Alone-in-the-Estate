@@ -11,23 +11,28 @@ public class PistolWeapon : MonoBehaviour
     private string ammoTag = "PistolBullet";
     private PistolBullet bullet;
 
+    AmmoClass ammunition;
+
     ObjectPooler objectPooler;
 
     private void Start()
     {
         objectPooler = ObjectPooler.Instance;
         PlayerInput.MouseZeroInput += Shoot;
+
     }
     public void Shoot(bool isShoot)
     {
         if (isShoot)
         {
-            if (PlayerInvent.pistolAmmoCount > 0){
-                objectPooler.SpawnFromPool(ammoTag, RayCast.hitRayCast.point, Quaternion.LookRotation(transform.forward));
-                PlayerInvent.pistolAmmoCount--;
-                Debug.Log($"Осталось {PlayerInvent.pistolAmmoCount} патронов");
-            }
-            else Debug.Log($"У вас закончились патроны подберите новые!");
+            //if ()
+            //{
+            //    objectPooler.SpawnFromPool(ammoTag, RayCast.hitRayCast.point, Quaternion.LookRotation(transform.forward));
+            //    PlayerInvent.pistolAmmoCount--;
+            //}
+                
+            // Занести в Делегат Debug.Log($"Осталось {PlayerInvent.pistolAmmoCount} патронов");
+            // Занести в Делегат else Debug.Log($"У вас закончились патроны подберите новые!");
         }
         //if (isShoot) objectPooler.SpawnFromPool(ammoTag, transform.position, Quaternion.LookRotation(transform.forward));
     }

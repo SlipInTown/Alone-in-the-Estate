@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -18,7 +19,6 @@ public class WaypointPatrol : MonoBehaviour
 
     private bool IsInChase = false;
 
-
     void Start ()
     {
         navMeshAgent.SetDestination (waypoints[0].position);
@@ -28,10 +28,12 @@ public class WaypointPatrol : MonoBehaviour
     {
         if (IsPlayerTooClose() && !IsObstacleBeetweenBotAndPlayer())
         {
-            IsInChase = true;
-            navMeshAgent.SetDestination(player.transform.position);
+            IsInChase = true;         
         }
-        else IsInChase = false;
+        else
+        {
+            IsInChase = false;
+        }
     }
 
     private void LateUpdate()
@@ -41,11 +43,22 @@ public class WaypointPatrol : MonoBehaviour
             navMeshAgent.SetDestination(player.transform.position);
         }
         else
-        //---------
-        if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
         {
-            m_CurrentWaypointIndex = (m_CurrentWaypointIndex + 1) % waypoints.Length;
-            navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
+            var isCurrentDestinationInWaypoints = 
+                (from t in waypoints 
+                where t.position == navMeshAgent.destination 
+                select t.position).Count() == 1; 
+
+            if (!isCurrentDestinationInWaypoints)
+            {
+                navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
+            }
+            else
+            if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
+            {
+                m_CurrentWaypointIndex = (m_CurrentWaypointIndex + 1) % waypoints.Length;
+                navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
+            }
         }
     }
 

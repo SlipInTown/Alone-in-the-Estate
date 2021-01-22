@@ -29,8 +29,6 @@ public class PlayerMovement : MonoBehaviour
 
         body.AddForce(moveDirection * moveSpeedMultiplier);
 
-        //body.MovePosition(new Vector3(0, input.y, 0));
-
         isMoved = true;
     }
 
