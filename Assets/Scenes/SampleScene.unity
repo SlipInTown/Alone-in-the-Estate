@@ -5611,7 +5611,7 @@ PrefabInstance:
     - target: {fileID: 126094977201806382, guid: c6395d2a2e028874abfd6f14b9a389f4,
         type: 3}
       propertyPath: m_Name
-      value: Ammo (1)
+      value: ShotgunAmmo
       objectReference: {fileID: 0}
     - target: {fileID: 126094977201806383, guid: c6395d2a2e028874abfd6f14b9a389f4,
         type: 3}
@@ -39128,7 +39128,7 @@ PrefabInstance:
     - target: {fileID: 126094977201806382, guid: c6395d2a2e028874abfd6f14b9a389f4,
         type: 3}
       propertyPath: m_Name
-      value: Ammo
+      value: PistolAmmo
       objectReference: {fileID: 0}
     - target: {fileID: 126094977201806383, guid: c6395d2a2e028874abfd6f14b9a389f4,
         type: 3}
