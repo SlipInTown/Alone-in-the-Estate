@@ -138,3 +138,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   owner: {fileID: 1944483401851050130}
   hpCount: 3
+  enemyTag: Enemy
+  bulletTag: PistolBullet

@@ -1,54 +1,47 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float moveSpeedMultiplier = 5f;
-
-    [SerializeField,Range(0.0f,1f)] private float dragPercentSlowdown = 0.01f;
-
-    private Vector3 moveDirection;
-
-    public float DragPercentSlowdown => (1 - dragPercentSlowdown);
-
+    [SerializeField] private float maxSpeed = 50f;
     private Rigidbody body;
 
-    private bool isMoved = false;
+    private bool IsMoving = false;
 
-    void Start ()
+    private Vector3 destination;
+    void Start()
     {
         body = GetComponent<Rigidbody>();
-        PlayerInput.OnInput += MovePlayer; 
+        PlayerInput.OnInput += MovePlayer;
     }
-
     private void MovePlayer(Vector3 input)
     {
-        moveDirection.Set(input.x, 0, input.z);
+        //Debug.Log(input);
+        //Debug.LogWarning(transform.position);
+        body.AddForce(input, ForceMode.VelocityChange);
+        transform.LookAt(input + transform.position);
+        body.velocity = Vector3.ClampMagnitude(input, maxSpeed);
 
-        body.AddForce(moveDirection * moveSpeedMultiplier);
-
-        isMoved = true;
     }
 
-    void FixedUpdate()
-    {
-        transform.LookAt(moveDirection + transform.position);
+    //private void MovePlayer(Vector3 input)
+    //{
+    //    moveDirection.Set(input.x, 0, input.z);
 
-        if (isMoved) return;
+    //    body.AddForce(moveDirection * moveSpeedMultiplier);
 
-        body.velocity = new Vector3(body.velocity.x * DragPercentSlowdown,
-        body.velocity.y,
-        body.velocity.z * DragPercentSlowdown); 
-        
-    }
+    //    isMoved = true;
+    //}
 
-    private void LateUpdate()
-    {
-        if (moveDirection == Vector3.zero)
-        {
-            isMoved = false;
-        }
-    }
+    //void FixedUpdate()
+    //{
+
+
+    //    if (isMoved) return;
+
+    //    body.velocity = new Vector3(body.velocity.x * DragPercentSlowdown,
+    //    body.velocity.y,
+    //    body.velocity.z * DragPercentSlowdown);
+
+    //}
 }

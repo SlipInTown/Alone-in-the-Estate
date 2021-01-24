@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider))]
-public class DestroyDoors : MonoBehaviour
+public class HidePairDoors : MonoBehaviour
 {
+    [SerializeField] private MeshRenderer anotherDoor;
     private MeshRenderer meshRenderer;
-    // Start is called before the first frame update
+
     void Start()
-    {
+    { 
         meshRenderer = GetComponent<MeshRenderer>();
     }
 
@@ -17,6 +18,7 @@ public class DestroyDoors : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             meshRenderer.enabled = false;
+            anotherDoor.enabled = false;
         }
     }
     private void OnTriggerExit(Collider other)
@@ -24,6 +26,7 @@ public class DestroyDoors : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             meshRenderer.enabled = true;
+            anotherDoor.enabled = true;
         }
     }
 }

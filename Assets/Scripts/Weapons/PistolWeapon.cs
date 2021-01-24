@@ -11,10 +11,13 @@ public class PistolWeapon : MonoBehaviour
     private string ammoTag = "PistolBullet";
     private PlayerInvent inventory;
 
+    private RayCast ray;
+
     ObjectPooler objectPooler;
 
     private void Start()
     {
+        ray = GetComponent<RayCast>();
         objectPooler = ObjectPooler.Instance;
         PlayerInput.MouseZeroInput += Shoot;
         inventory = FindObjectOfType<PlayerInvent>();
@@ -25,7 +28,7 @@ public class PistolWeapon : MonoBehaviour
         {
             if (inventory.itemPlayerList[ammoTag].Quantity>0)
             { 
-                objectPooler.SpawnFromPool(ammoTag, RayCast.hitRayCast.point, Quaternion.LookRotation(transform.forward));
+                objectPooler.SpawnFromPool(ammoTag, ray.Hit.point, Quaternion.LookRotation(transform.forward));
                 inventory.itemPlayerList[ammoTag].Quantity--;
                 Debug.Log($"Осталось {inventory.itemPlayerList[ammoTag].Quantity} патронов");
             }

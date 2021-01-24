@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7383120490611998700}
   - component: {fileID: 4434485630959545254}
   - component: {fileID: 2067635698968267213}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: PistolBullet
   m_TagString: PistolBullet
   m_Icon: {fileID: 0}

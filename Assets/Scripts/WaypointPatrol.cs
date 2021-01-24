@@ -15,12 +15,17 @@ public class WaypointPatrol : MonoBehaviour
  
     [SerializeField] private GameObject player;
     [SerializeField] private float distanceForChase = 10f;
+
+    [SerializeField] private LayerMask layer;
     public float DistanceForChaseSQRT => distanceForChase * distanceForChase;
 
     private bool IsInChase = false;
 
+    private RayCastInConus conusCollider;
+
     void Start ()
     {
+        conusCollider = GetComponentInChildren<RayCastInConus>();
         navMeshAgent.SetDestination (waypoints[0].position);
     }
 
@@ -44,16 +49,16 @@ public class WaypointPatrol : MonoBehaviour
         }
         else
         {
-            var isCurrentDestinationInWaypoints = 
-                (from t in waypoints 
-                where t.position == navMeshAgent.destination 
-                select t.position).Count() == 1; 
+            //var isCurrentDestinationInWaypoints =
+            //    (from t in waypoints
+            //     where t.position == navMeshAgent.destination
+            //     select t.position).Count() == 1;
 
-            if (!isCurrentDestinationInWaypoints)
-            {
-                navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
-            }
-            else
+            //if (!isCurrentDestinationInWaypoints)
+            //{
+            //    navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
+            //}
+            //else
             if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
             {
                 m_CurrentWaypointIndex = (m_CurrentWaypointIndex + 1) % waypoints.Length;
@@ -79,13 +84,11 @@ public class WaypointPatrol : MonoBehaviour
 
         RaycastHit hit;
         
-        if (Physics.Raycast(transform.position, hitDirection, out hit,distanceForChase))
+        if (Physics.Raycast(transform.position, hitDirection, out hit, layer))
         {
             distanceOfRayCast = hit.distance;
-
-            
         }
-        
+
         Debug.DrawRay(transform.position, hitDirection * distanceOfRayCast, Color.red);
 
         if (hit.transform.CompareTag(playerTag))

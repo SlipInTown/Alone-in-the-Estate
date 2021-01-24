@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6618788125517663729}
   - component: {fileID: 8814312036252914684}
   - component: {fileID: -710959405300908258}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Enemy
   m_TagString: Ball
   m_Icon: {fileID: 0}
@@ -126,6 +126,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   owner: {fileID: 5740752309560898183}
   hpCount: 3
+  enemyTag: Enemy
+  bulletTag: PistolBullet
 --- !u!195 &-710959405300908258
 NavMeshAgent:
   m_ObjectHideFlags: 0

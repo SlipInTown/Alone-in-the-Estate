@@ -564,6 +564,9 @@ MonoBehaviour:
   playerTag: Player
   player: {fileID: 0}
   distanceForChase: 10
+  layer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &5863192054190611860
 GameObject:
   m_ObjectHideFlags: 0

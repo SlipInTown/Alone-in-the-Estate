@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,23 +6,36 @@ public class PlayerInput : MonoBehaviour
 {
     [SerializeField] private string horizontalAxis = "Horizontal";
     [SerializeField] private string verticalAxis = "Vertical";
-    //[SerializeField] private string jumpAxis = "Jump";
 
-    private Vector3 inputAxis;
+    [SerializeField] private float moveSpeedMultiplier = 5f;
 
-    //public UnityEvent<Vector3> OnInputEvent;
+    [SerializeField] private Camera mainCamera;
+
+    //private RayCast RayCast;
 
     public static Action<Vector3> OnInput;
+
+    private void Awake()
+    {
+        mainCamera = Camera.main;
+
+        //RayCast = GetComponentInChildren<RayCast>();
+    }
+
     public static Action<bool> MouseZeroInput;
     void FixedUpdate()
     {
-        var horizontal = Input.GetAxis(horizontalAxis);
-        var vertical = Input.GetAxis(verticalAxis);
-        //var jump = Input.GetAxis(jumpAxis);
+        Vector3 right = mainCamera.transform.right;
 
-        inputAxis.Set(horizontal, 0, vertical);
+        Vector3 forward = Vector3.Cross(right, Vector3.up);
 
-        OnInput?.Invoke(inputAxis);
+        Vector3 movement = Vector3.zero;
+
+        movement += right * Input.GetAxis(horizontalAxis) * Time.deltaTime * moveSpeedMultiplier;
+
+        movement += forward * Input.GetAxis(verticalAxis) * Time.deltaTime * moveSpeedMultiplier;
+        
+        OnInput?.Invoke(movement);
     }
 
     private void LateUpdate()
