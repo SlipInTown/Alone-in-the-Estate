@@ -8,18 +8,13 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] private string verticalAxis = "Vertical";
 
     [SerializeField] private float moveSpeedMultiplier = 5f;
-
+        
     [SerializeField] private Camera mainCamera;
+    public InputEvent onInputVector;
 
-    //private RayCast RayCast;
-
-    public static Action<Vector3> OnInput;
-
-    private void Awake()
+    private void Start()
     {
         mainCamera = Camera.main;
-
-        //RayCast = GetComponentInChildren<RayCast>();
     }
 
     public static Action<bool> MouseZeroInput;
@@ -34,8 +29,12 @@ public class PlayerInput : MonoBehaviour
         movement += right * Input.GetAxis(horizontalAxis) * Time.deltaTime * moveSpeedMultiplier;
 
         movement += forward * Input.GetAxis(verticalAxis) * Time.deltaTime * moveSpeedMultiplier;
-        
-        OnInput?.Invoke(movement);
+
+        //if (movement == Vector3.zero) return;
+
+        Debug.Log($"movement = {movement}");
+
+        onInputVector?.Invoke(movement);
     }
 
     private void LateUpdate()
@@ -44,8 +43,5 @@ public class PlayerInput : MonoBehaviour
     }
 }
 
-//[Serializable]
-//public struct InputAxis
-//{
-//    public Vector3 input;
-//}
+[System.Serializable]
+public class InputEvent : UnityEvent<Vector3>{ }

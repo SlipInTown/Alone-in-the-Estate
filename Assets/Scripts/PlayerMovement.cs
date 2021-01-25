@@ -12,11 +12,10 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody>();
-        PlayerInput.OnInput += MovePlayer;
     }
-    private void MovePlayer(Vector3 input)
+    public void MovePlayer(Vector3 input)
     {
-        //Debug.Log(input);
+        
         //Debug.LogWarning(transform.position);
         body.AddForce(input, ForceMode.VelocityChange);
         transform.LookAt(input + transform.position);

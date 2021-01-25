@@ -14,7 +14,7 @@ public class RayCast : MonoBehaviour
         {
             return hitRayCast;
         }
-        set
+        private set
         {
             hitRayCast = value;
         }
