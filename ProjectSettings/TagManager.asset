@@ -5,12 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Camera
-  - PistolBullet
   - Triggers
   - Ammunition
   - Enemy
   - Ball
   - ShotgunBullet
+  - PistolBullet
   layers:
   - Default
   - TransparentFX

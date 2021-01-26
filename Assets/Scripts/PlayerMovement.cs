@@ -6,21 +6,32 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float maxSpeed = 50f;
     private Rigidbody body;
 
-    private bool IsMoving = false;
+    [SerializeField] private Animator animatorController;
 
-    private Vector3 destination;
-    void Start()
+    [SerializeField] private bool isMoving;
+
+    [SerializeField] private Rigidbody[] AllRigidbodys;
+
+    [SerializeField] private string horizontalAxis = "Horizontal";
+    [SerializeField] private string verticalAxis = "Vertical";
+    void Awake()
     {
-        body = GetComponent<Rigidbody>();
+        animatorController = GetComponent<Animator>();
+        for (int i = 0; i < AllRigidbodys.Length; i++)
+        {
+            AllRigidbodys[i].isKinematic = true;
+        }
     }
-    public void MovePlayer(Vector3 input)
+    public void MovePlayer(float horizontalMove, float verticalMove)
     {
-        
-        //Debug.LogWarning(transform.position);
-        body.AddForce(input, ForceMode.VelocityChange);
-        transform.LookAt(input + transform.position);
-        body.velocity = Vector3.ClampMagnitude(input, maxSpeed);
 
+        //Debug.LogWarning(transform.position);
+        //Debug.Log($"quaternion = {quaternion} || vector = {vector}");
+        //body.AddForce(vector, ForceMode.VelocityChange);
+        //body.velocity = Vector3.ClampMagnitude(vector, maxSpeed);
+        //transform.rotation = quaternion;
+        transform.Rotate(0, horizontalMove, 0);
+        transform.Translate(0, 0, verticalMove);
     }
 
     //private void MovePlayer(Vector3 input)

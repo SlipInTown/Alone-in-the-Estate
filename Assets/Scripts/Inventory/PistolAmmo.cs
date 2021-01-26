@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PistolAmmo : MonoBehaviour , AmmoClass
 {
-    [SerializeField] private string ammoTag = "PistolBullet";
+    [SerializeField] private string ammoTag = "Bullet";
 
     [SerializeField] private int ammoCount = 0;
 

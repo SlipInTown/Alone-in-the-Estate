@@ -7,10 +7,15 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] private string horizontalAxis = "Horizontal";
     [SerializeField] private string verticalAxis = "Vertical";
 
-    [SerializeField] private float moveSpeedMultiplier = 5f;
+    //[SerializeField] private float moveSpeedMultiplier = 5f;
         
     [SerializeField] private Camera mainCamera;
-    public InputEvent onInputVector;
+    public Vector3Event fromInputToCheck;
+
+    private float horizontalMove;
+    private float verticalMove;
+
+    private bool isMoving = false;
 
     private void Start()
     {
@@ -20,21 +25,25 @@ public class PlayerInput : MonoBehaviour
     public static Action<bool> MouseZeroInput;
     void FixedUpdate()
     {
-        Vector3 right = mainCamera.transform.right;
+        //Vector3 right = mainCamera.transform.right;
 
-        Vector3 forward = Vector3.Cross(right, Vector3.up);
+        //Vector3 forward = Vector3.Cross(right, Vector3.up);
 
-        Vector3 movement = Vector3.zero;
+        //Vector3 movement = Vector3.zero;
 
-        movement += right * Input.GetAxis(horizontalAxis) * Time.deltaTime * moveSpeedMultiplier;
+        //movement += right * Input.GetAxis(horizontalAxis) * Time.deltaTime * moveSpeedMultiplier;
 
-        movement += forward * Input.GetAxis(verticalAxis) * Time.deltaTime * moveSpeedMultiplier;
+        //movement += forward * Input.GetAxis(verticalAxis) * Time.deltaTime * moveSpeedMultiplier;
 
         //if (movement == Vector3.zero) return;
 
-        Debug.Log($"movement = {movement}");
-
-        onInputVector?.Invoke(movement);
+        //Debug.Log($"movement = {movement}");
+        //if (movement == Vector3.zero) return;
+        
+        horizontalMove = Input.GetAxis(horizontalAxis) * Time.deltaTime * 150;
+        verticalMove = Input.GetAxis(verticalAxis) * Time.deltaTime * 3.9f;
+        if (verticalMove == 0 && horizontalMove == 0) return;
+        fromInputToCheck?.Invoke(horizontalMove, verticalMove);
     }
 
     private void LateUpdate()
@@ -44,4 +53,4 @@ public class PlayerInput : MonoBehaviour
 }
 
 [System.Serializable]
-public class InputEvent : UnityEvent<Vector3>{ }
+public class Vector3Event : UnityEvent<float,float>{ }

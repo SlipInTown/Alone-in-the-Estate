@@ -43,6 +43,11 @@ public class WaypointPatrol : MonoBehaviour
 
     private void LateUpdate()
     {
+        StartCoroutine(nameof(Chasing));
+    }
+
+    private void Chasing()
+    {
         if (IsInChase)
         {
             navMeshAgent.SetDestination(player.transform.position);
@@ -54,7 +59,7 @@ public class WaypointPatrol : MonoBehaviour
             //     where t.position == navMeshAgent.destination
             //     select t.position).Count() == 1;
 
-            //if (!isCurrentDestinationInWaypoints)
+            //if (isCurrentDestinationInWaypoints)
             //{
             //    navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
             //}
