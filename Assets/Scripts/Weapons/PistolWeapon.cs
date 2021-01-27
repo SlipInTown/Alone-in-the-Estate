@@ -34,6 +34,7 @@ public class PistolWeapon : MonoBehaviour
             }
             //Занести в Делегат Debug.Log($"Осталось {PlayerInvent.pistolAmmoCount} патронов");
             //Занести в Делегат else Debug.Log($"У вас закончились патроны подберите новые!");
+            //Перенести стрельбу по времени в корутины
             else
             {
                 Debug.Log($"У вас закончились патроны подберите новые!");
