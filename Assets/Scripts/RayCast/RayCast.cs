@@ -27,16 +27,16 @@ public class RayCast : MonoBehaviour
 
     private void Start()
     {
-        //line = GetComponent<LineRenderer>();
-       // line.enabled = true;
+        line = GetComponent<LineRenderer>();
+        line.enabled = true;
     }
     void Update()
     {
-        //line.SetPosition(0, transform.position);
+        line.SetPosition(0, transform.position);
         if (Physics.Raycast(transform.position, transform.forward, out hitRayCast, maxDistanceOfRayCast, layerMask))
         {
             pointer.position = hitRayCast.point;
-            //line.SetPosition(1, hitRayCast.point);
+            line.SetPosition(1, hitRayCast.point);
         }
         //Debug.DrawRay(transform.position, transform.forward);
     }
