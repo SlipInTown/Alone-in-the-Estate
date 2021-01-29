@@ -5,12 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PistolBullet : MonoBehaviour,IPooledObject
 {
-    ObjectPooler objectPooler;
+    [SerializeField]private ObjectPooler objectPooler;
     [SerializeField] private float force = 50f;
-    private void Start()
-    {
-        objectPooler = ObjectPooler.Instance;
-    }
 
     public void OnObjectSpawn()
     {

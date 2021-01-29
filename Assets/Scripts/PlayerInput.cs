@@ -15,14 +15,12 @@ public class PlayerInput : MonoBehaviour
     private float horizontalMove;
     private float verticalMove;
 
-    private bool isMoving = false;
+    //private void Start()
+    //{
+    //    mainCamera = Camera.main;
+    //}
 
-    private void Start()
-    {
-        mainCamera = Camera.main;
-    }
-
-    public static Action<bool> MouseZeroInput;
+    public BoolEvent MouseZeroInput;
     void FixedUpdate()
     {
         //Vector3 right = mainCamera.transform.right;
@@ -42,7 +40,6 @@ public class PlayerInput : MonoBehaviour
         
         horizontalMove = Input.GetAxis(horizontalAxis) * Time.deltaTime * 150;
         verticalMove = Input.GetAxis(verticalAxis) * Time.deltaTime * 3.9f;
-        if (verticalMove == 0 && horizontalMove == 0) return;
         fromInputToCheck?.Invoke(horizontalMove, verticalMove);
     }
 
@@ -54,3 +51,5 @@ public class PlayerInput : MonoBehaviour
 
 [System.Serializable]
 public class Vector3Event : UnityEvent<float,float>{ }
+[System.Serializable]
+public class BoolEvent : UnityEvent<bool> { }

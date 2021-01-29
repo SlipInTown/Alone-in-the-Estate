@@ -46,7 +46,7 @@ public class PistolAmmo : MonoBehaviour , AmmoClass
     }
 
     PistolAmmo pistolAmmo;
-    void Start()
+    void Awake()
     {
         PlayerInvent inventory = GetComponent<PlayerInvent>();
         pistolAmmo = new PistolAmmo { AmmoType = ammoTag, Quantity = ammoCount, DamageOfAmmo = ammoDamage };

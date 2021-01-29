@@ -124,6 +124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a324c96eff6601f43bdd005a3f881919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectPooler: {fileID: 9183394863208825144, guid: 0da2a3cd471df144b85a3eee644fd2dc,
+    type: 3}
   force: 15
 --- !u!96 &2067635698968267213
 TrailRenderer:

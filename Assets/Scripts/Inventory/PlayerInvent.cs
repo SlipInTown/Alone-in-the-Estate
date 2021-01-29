@@ -6,7 +6,7 @@ public class PlayerInvent : MonoBehaviour
 {
     public Dictionary<string, IItem> itemPlayerList;
     
-    void Start()
+    void Awake()
     {
         itemPlayerList = new Dictionary<string,IItem>();
     }

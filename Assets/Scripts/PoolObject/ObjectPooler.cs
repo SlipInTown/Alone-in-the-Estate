@@ -15,15 +15,15 @@ public class ObjectPooler : MonoBehaviour
     public List<Pool> pools;
     public Dictionary<string, Queue<GameObject>> poolDictionary;
 
-    #region SingletonPooler
-    public static ObjectPooler Instance; 
-    private void Awake()
-    {
-        Instance = this;
-    }
+    //#region SingletonPooler
+    //public static ObjectPooler Instance; 
+    //private void Awake()
+    //{
+    //    Instance = this;
+    //}
     
-    #endregion
-    void Start()
+    //#endregion
+    void Awake()
     {
         poolDictionary = new Dictionary<string, Queue<GameObject>>();
         foreach (Pool pool in pools)
@@ -63,11 +63,11 @@ public class ObjectPooler : MonoBehaviour
     
     public void BackInPool(GameObject objectToPool,string tag)
     {
-        if (!poolDictionary.ContainsKey(tag))
-        {
-            Debug.LogWarning($"Pool with tag {tag} is not founded!");
-            return;
-        }
+        //if (!poolDictionary.ContainsKey(tag))
+        //{
+        //    Debug.LogWarning($"Pool with tag {tag} is not founded!");
+        //    return;
+        //}
         objectToPool.SetActive(false);
     }
 }

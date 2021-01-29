@@ -4,23 +4,20 @@ using UnityEngine;
 
 public class PistolWeapon : MonoBehaviour
 {
-    [SerializeField] public int weaponDamage = 10;
-    [SerializeField] public int roundMag = 10;
-    [SerializeField] public float reloadSpeed;
-    [SerializeField] public string nameWeapon = "Pistol";
+    [SerializeField] private int weaponDamage = 10;
+    [SerializeField] private int roundMag = 10;
+    [SerializeField] private float reloadSpeed;
+    [SerializeField] private string nameWeapon = "Pistol";
     private string ammoTag = "PistolBullet";
-    private PlayerInvent inventory;
+    [SerializeField] private PlayerInvent inventory;
 
     private RayCast ray;
 
-    ObjectPooler objectPooler;
+    [SerializeField] private ObjectPooler objectPooler;
 
-    private void Start()
+    private void Awake()
     {
         ray = GetComponent<RayCast>();
-        objectPooler = ObjectPooler.Instance;
-        PlayerInput.MouseZeroInput += Shoot;
-        inventory = FindObjectOfType<PlayerInvent>();
     }
     public void Shoot(bool isShoot)
     {
