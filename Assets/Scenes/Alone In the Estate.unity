@@ -28395,6 +28395,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1438717941}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1445356059 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3540866540949348920, guid: e7038a537c18c5a4dabc08489cd620cb,
+    type: 3}
+  m_PrefabInstance: {fileID: 3540866539642961955}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cae299bc08662c646b40f722548a57a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1451677223 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 491136, guid: 0683a40fb42cb7e45b4eea825d8a9325,
@@ -40643,9 +40655,39 @@ PrefabInstance:
       objectReference: {fileID: 1869527710}
     - target: {fileID: 9183394863208825142, guid: 0da2a3cd471df144b85a3eee644fd2dc,
         type: 3}
+      propertyPath: MouseZeroInput.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9183394863208825142, guid: 0da2a3cd471df144b85a3eee644fd2dc,
+        type: 3}
+      propertyPath: MouseZeroInput.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9183394863208825142, guid: 0da2a3cd471df144b85a3eee644fd2dc,
+        type: 3}
+      propertyPath: MouseZeroInput.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1445356059}
+    - target: {fileID: 9183394863208825142, guid: 0da2a3cd471df144b85a3eee644fd2dc,
+        type: 3}
       propertyPath: fromInputToCheck.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 165670454}
+    - target: {fileID: 9183394863208825142, guid: 0da2a3cd471df144b85a3eee644fd2dc,
+        type: 3}
+      propertyPath: MouseZeroInput.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9183394863208825142, guid: 0da2a3cd471df144b85a3eee644fd2dc,
+        type: 3}
+      propertyPath: MouseZeroInput.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Shoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 9183394863208825142, guid: 0da2a3cd471df144b85a3eee644fd2dc,
+        type: 3}
+      propertyPath: MouseZeroInput.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9183394863208825143, guid: 0da2a3cd471df144b85a3eee644fd2dc,
         type: 3}
       propertyPath: m_RootOrder
@@ -40699,6 +40741,11 @@ PrefabInstance:
     - target: {fileID: 9183394863208825143, guid: 0da2a3cd471df144b85a3eee644fd2dc,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9183394863208825151, guid: 0da2a3cd471df144b85a3eee644fd2dc,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

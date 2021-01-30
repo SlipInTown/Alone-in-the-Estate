@@ -47,11 +47,11 @@ public class ShotgunAmmo : MonoBehaviour, AmmoClass
     }
 
     ShotgunAmmo shotgunAmmo;
-    void Awake()
+    void Start()
     {
-        PlayerInvent inventory = GetComponent<PlayerInvent>();
+        PlayeryInventory inventory = GetComponent<PlayeryInventory>();
         shotgunAmmo = new ShotgunAmmo { AmmoType = ammoTag, Quantity = ammoCount, DamageOfAmmo = ammoDamage };
-        inventory.itemPlayerList.Add(AmmoType, shotgunAmmo);
+        inventory.AddToInventory(AmmoType, shotgunAmmo);
     }
 
     public string GetItemType()

@@ -8,18 +8,18 @@ public class AmmoPickUp : MonoBehaviour
     [SerializeField] private int ammoAddition = 5;
     [SerializeField] private string ammoPickUpTag;
 
-    private PlayerInvent inventory;
+    private PlayeryInventory inventory;
 
     private void Start()
     {
-        inventory = FindObjectOfType<PlayerInvent>();
+        inventory = FindObjectOfType<PlayeryInventory>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (!other.gameObject.CompareTag(playerTag)) return;
 
-        var tempAmmo = (AmmoClass)inventory.itemPlayerList[ammoPickUpTag];
+        var tempAmmo = (AmmoClass)inventory.GetItem(ammoPickUpTag);
 
         AddAmmo(tempAmmo, ammoAddition);
 
