@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PistolAmmo : MonoBehaviour , AmmoClass
+public class AmmoBullet : MonoBehaviour , AmmoClass
 {
     [SerializeField] private string ammoTag = "Bullet";
 
@@ -45,11 +45,11 @@ public class PistolAmmo : MonoBehaviour , AmmoClass
         }
     }
 
-    PistolAmmo pistolAmmo;
+    AmmoBullet pistolAmmo;
     void Start()
     {
         PlayeryInventory inventory = GetComponent<PlayeryInventory>();
-        pistolAmmo = new PistolAmmo { AmmoType = ammoTag, Quantity = ammoCount, DamageOfAmmo = ammoDamage };
+        pistolAmmo = new AmmoBullet { AmmoType = ammoTag, Quantity = ammoCount, DamageOfAmmo = ammoDamage };
         inventory.AddToInventory(AmmoType, pistolAmmo);
     }
 
@@ -57,4 +57,9 @@ public class PistolAmmo : MonoBehaviour , AmmoClass
     {
         return AmmoType;
     }
+}
+
+enum MyEnum
+{
+
 }

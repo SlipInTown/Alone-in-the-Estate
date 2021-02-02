@@ -13,10 +13,6 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private string bulletTag = "PistolBullet";
 
     private EnemyManager enemyManager;
-    /// <summary>
-    /// Добавить новые тэги для новых пуль ||
-    /// </summary>
-    /// <param name="collision"></param>
 
     private void Start()
     {

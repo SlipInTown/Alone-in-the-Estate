@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Alone In the Estate.unity
+    path: Assets/Scenes/GameScene/Alone In the Estate.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/MainMenu/MainMenu.unity
+    guid: 9aae147ab3107eb48b13c6ea8b44797c
   m_configObjects: {}

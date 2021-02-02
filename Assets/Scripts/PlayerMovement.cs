@@ -3,7 +3,7 @@
 //[RequireComponent(typeof(Rigidbody))]
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float maxSpeed = 50f;
+    //[SerializeField] private float maxSpeed = 50f;
     private Rigidbody body;
 
     [SerializeField] private Animator animatorController;

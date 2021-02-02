@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class PistolWeapon : MonoBehaviour
 {
-    [SerializeField] private int weaponDamage = 10;
-    [SerializeField] private int roundMag = 10;
-    [SerializeField] private float reloadSpeed;
-    [SerializeField] private string nameWeapon = "Pistol";
+    //[SerializeField] private string nameWeapon = "Pistol";
     private string ammoTag = "PistolBullet";
     [SerializeField] private PlayeryInventory inventory;
 
