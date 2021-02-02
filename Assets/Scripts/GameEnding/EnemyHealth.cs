@@ -12,12 +12,7 @@ public class EnemyHealth : MonoBehaviour
 
     [SerializeField] private string bulletTag = "PistolBullet";
 
-    private EnemyManager enemyManager;
-
-    private void Start()
-    {
-        enemyManager = GetComponentInParent<EnemyManager>();
-    }
+    [SerializeField] private EnemyManager enemyManager;
 
     private void OnCollisionEnter(Collision collision)
     {
